@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seafarers Login</title>
+    <link rel="icon" type="image/x-icon" href="http://localhost/Seaways/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="http://localhost/Seaways/css/Login.css">
+    <script src="http://localhost/Seaways/javascript/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="http://localhost/Seaways/images/Shiplogodesign.png" alt="LOGO"/>
+        </div>
+        <div class="login" width="max">
+            <h1>Login</h1>
+            <form action="http://localhost/Seaways/php/db_connection.php" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required >
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

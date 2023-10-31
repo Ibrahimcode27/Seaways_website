@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+.back-button{
+    background-color: aqua;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+.ViewTable {
+    background-color: aqua;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 10px;
+    margin-top: 45px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+input {
+    width: 95%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.back-button a:hover {
+    text-decoration: underline;
+}
+.ViewTable {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.ViewTable a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.ViewTable a:hover {
+    background-color: underline;
+}

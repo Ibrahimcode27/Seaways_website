@@ -1,0 +1,59 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Gap between columns */
+    align-items: center; /* Vertically center content */
+    background-color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.logo img {
+    max-width: 100%; /* Ensure the logo image fits within its container */
+}
+
+.login {
+    overflow: hidden;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.hdwallpaper.nu/wp-content/uploads/2017/03/water-19.jpg');
+
+}
+
+h1 {
+    text-align: center;
+}
+label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input[type="text"], input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+}
+input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px; /* Adjust the font size as needed */
+        font-weight: bold; /* Make the text bold */
+    
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

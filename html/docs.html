@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Upload Page</title>
+    <link rel="icon" type="image/x-icon" href="http://localhost/Seaways/images/favicon.png">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .upload-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .navbar {
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo img {
+            width: 120px;
+            height: auto;
+            cursor: pointer;
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-links li {
+            display: inline;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        
+        .menu-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        
+        /* Hover effect for menu items */
+        .nav-links a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Navbar -->
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="http://localhost/Seaways/images/IBROVIZA.png" alt="Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="http://localhost/Seaways/php/home.php">HOME</a></li>
+                    <li><a href="http://localhost/Seaways/html/docs.html">Documents</a></li>
+                    <li><a href="http://localhost/Seaways/html/profile2.php">Profile</a></li>
+                </ul>
+                <img src="http://localhost/Seaways/images/menu2.png" alt="Menu Icon" class="menu-icon">
+            </nav>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="upload-card">
+            <h2>Upload Documents</h2>
+            <p>Please upload the following types of documents:</p>
+            <ul>
+                <li>Aadhaar card</li>
+                <li>PAN card</li>
+                <li>Ration card</li>
+            </ul>
+            <form action="http://localhost/Seaways/php/upload.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload" name="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
