@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seafarer Registration</title>
+    <link rel="icon" type="image/x-icon" href="http://localhost/Seaways/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="http://localhost/Seaways/css/registration.css">    
+</head>
+<body>
+    <div class="back-button">
+        <a href="http://localhost/Seaways/html/admin_panel.html">&larr; Go Back</a>
+    </div>
+    <h1>Seafarer Registration</h1>
+    <form action="http://localhost/Seaways/php/register_seafarer.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    
+        <label for="Admin">Admin:</label>
+        <input type="Admin" id="Admin" name="Admin">
+    
+        <label for="contractType">Contract Type:</label>
+        <input type="text" id="contractType" name="contractType">
+    
+        <label for="contractEnd">Contract End Date:</label>
+        <input type="date" id="contractEnd" name="contractEnd">
+    
+        <input type="submit" value="Register">
+    </form>
+    
+    <div class="ViewTable">
+        <a href="http://localhost/Seaways/php/View.php">View all Seafarers!</a>
+    </div>
+    <h1>Remove Seafarer</h1>
+    <form action="http://localhost/Seaways/php/remove_seaferers.php" method="POST">
+        <label for="removeUsername">Username to Remove:</label>
+        <input type="text" id="removeUsername" name="removeUsername" required>
+        <input type="submit" value="Remove">
+    </form>
+</body>
+</html>

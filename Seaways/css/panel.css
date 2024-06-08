@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    height: 10vh; /* Full viewport height */
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    cursor: pointer; /* Add pointer cursor for clickable effect */
+    transition: transform 0.2s ease-in-out; /* Add a smooth hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Enlarge the card slightly on hover */
+}
+
+.logout-button{
+    background-color: aqua;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.hdwallpaper.nu/wp-content/uploads/2017/03/water-19.jpg');
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px; /* Add a small top margin to the h1 */
+}
+.logout-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logout-button a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.logout-button a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,61 @@
+/* Apply some basic styling to the table */
+table.seafarers-table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Style the table header */
+table.seafarers-table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+table.seafarers-table th {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style alternating rows for better readability */
+table.seafarers-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Style table data cells */
+table.seafarers-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Add some hover effect to rows */
+table.seafarers-table tbody tr:hover {
+    background-color: #ccc;
+}
+.back-button{
+    background-color: #fff;
+    color: aqua;
+    cursor: pointer;
+    padding: 10px 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.back-button a:hover {
+    text-decoration: underline;
+}
+h1 {
+    margin: 60px;
+}

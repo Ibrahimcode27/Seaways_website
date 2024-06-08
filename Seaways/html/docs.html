@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Upload Page</title>
+    <link rel="icon" type="image/x-icon" href="http://localhost/Seaways/images/favicon.png">
+    <link rel="stylesheet" href="http://localhost/Seaways/css/docs.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Navbar -->
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="http://localhost/Seaways/images/IBROVIZA.png" alt="Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="http://localhost/Seaways/php/home.php">HOME</a></li>
+                    <li><a href="http://localhost/Seaways/html/docs.html">Documents</a></li>
+                    <li><a href="http://localhost/Seaways/html/profile2.php">Profile</a></li>
+                </ul>
+                <img src="http://localhost/Seaways/images/menu2.png" alt="Menu Icon" class="menu-icon">
+            </nav>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="upload-card">
+            <h2>Upload Documents</h2>
+            <p>Please upload the following types of documents:</p>
+            <ul>
+                <li>DOCX,WORD</li>
+                <li>PDF,PPTX,PPT</li>
+                <li>JPG,PNG</li>
+            </ul>
+            <form action="http://localhost/Seaways/php/upload.php" method="post" enctype="multipart/form-data">
+                <label for="fileDescription">Description:</label>
+                <input type="text" name="fileDescription" id="fileDescription">
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload" name="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

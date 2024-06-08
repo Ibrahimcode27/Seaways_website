@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seafarer Registration</title>
+    <link rel="icon" type="image/x-icon" href="http://localhost/Seaways/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="http://localhost/Seaways/css/registration.css">    
+</head>
+<body>
+    <div class="back-button">
+        <a href="http://localhost/Seaways/html/admin_panel.html">&larr; Go Back</a>
+    </div>
+    <h1>Seafarer Qualifications</h1>
+    <form action="http://localhost/Seaways/php/qualificationadding.php" method="POST">
+        <label for="empID">EmpID:</label>
+        <input type="number" id="empID" name="empID" required>
+
+        <label for="username">QualificationID:</label>
+        <input type="number" id="QualificationID" name="QualificationID" required>
+    
+        <label for="password">Primary Education:</label>
+        <input type="text" id="primary" name="primary" required>
+    
+        <label for="Admin">Secondary Education:</label>
+        <input type="text" id="secondary" name="secondary">
+    
+        <input type="submit" value="Register">
+    </form>
+    
+    <div class="ViewTable">
+        <a href="http://localhost/Seaways/php/View.php">View all Seafarers!</a>
+    </div>
+</body>
+</html>
